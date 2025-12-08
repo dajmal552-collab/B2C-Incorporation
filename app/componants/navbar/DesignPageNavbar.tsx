@@ -44,7 +44,8 @@ export const DesignPageNavbar: React.FC = () => {
           {/* LOGO */}
           <img src="/whiteDesignLogo.png" alt="logo" className="h-4" />
 
-<div className="flex justify-center">
+          {/* NAV LINKS */}
+         <div className="flex justify-center">
   <div className="flex gap-6">
       {[
                     { heading: "services", to: "/pages/designs/ourservices" },
