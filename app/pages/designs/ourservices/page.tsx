@@ -83,6 +83,26 @@ export default function DesignPage() {
       description:
         "Crafting user-centered interfaces that balance aesthetics with usability.",
       image: "/image.png",
+    },  {
+      id: 5,
+      title: "Proof of concept design",
+      description:
+        "A PoC design validates whether an idea is viable before investing in full development.",
+      image: "/image.png",
+    },
+    {
+      id: 6,
+      title: "MVP Design",
+      description:
+        "MVP design focuses on building the smallest lovable product to validate early-market fit.",
+      image: "/image.png",
+    },
+    {
+      id: 7,
+      title: "UX/UI Design",
+      description:
+        "Crafting user-centered interfaces that balance aesthetics with usability.",
+      image: "/image.png",
     },
   ];
 
@@ -116,12 +136,12 @@ export default function DesignPage() {
         </h2>
 
         <div className="flex gap-4 mt-[200px]">
-          <ArrowRight
+          <ArrowLeft
             onClick={scrollLeft}
             className="text-white text-lg bg-white/10 w-10 h-12 flex items-center justify-center rounded-full hover:bg-blue-600 transition-colors duration-500"
           />
 
-          <ArrowLeft
+          <ArrowRight
             onClick={scrollRight}
             className="text-white text-xl bg-white/10 w-10 h-12 flex items-center justify-center rounded-full hover:bg-blue-600 transition-colors duration-500"
           />
@@ -165,26 +185,27 @@ export default function DesignPage() {
   </h2>
 
   <div className="grid grid-cols-12 gap-6 py-10 border-b border-neutral-800">
-   <div className="col-span-3 flex flex-col gap-40">
-  <div>
+  <div className="col-span-3 flex flex-col gap-40 mt-20">
+  <div className="flex items-center gap-4">
     <p className="text-xl opacity-70">01</p>
-    <h2 className="text-2xl font-semibold">Strategize</h2>
+    <h2 className="text-2xl font-semibold ml-[100px]">Strategize</h2>
   </div>
 
-  <div>
+  <div className="flex items-center gap-4">
     <p className="text-xl opacity-70">02</p>
-    <h2 className="text-2xl font-semibold">Create</h2>
+    <h2 className="text-2xl font-semibold ml-[100px]">Create</h2>
   </div>
 
-  <div>
+  <div className="flex items-center gap-4">
     <p className="text-xl opacity-70">03</p>
-    <h2 className="text-2xl font-semibold">Scale</h2>
+    <h2 className="text-2xl font-semibold ml-[100px]">Scale</h2>
   </div>
 </div>
 
+
     <div className="col-span-9 flex flex-col">
       {strategizeData.map((item) => (
-        <div key={item.id} className="border-b border-neutral-800 py-4">
+        <div key={item.id} className="border-b border-neutral-800 py-10">
 
           <button
             onClick={() => setOpen(open === item.id ? null : item.id)}
