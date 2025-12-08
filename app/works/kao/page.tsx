@@ -17,7 +17,7 @@ export default function page() {
             <h1 className="text-7xl text-blue-700 font-thin">
               Kao: A Cosmetics, Hygiene and Chemical Business.
             </h1>
-            <span className="text-3xl text-white/90">Website</span>
+            <span className="text-3xl text-white/80">Website</span>
           </div>
         </div>
 
@@ -26,7 +26,7 @@ export default function page() {
         </div>
       </div>
       <div className="mx-auto w-10/12">
-        <FadeSlideIn className="text-white flex gap-5 justify-between py-10">
+        <FadeSlideIn className="text-white/80 flex gap-5 justify-between py-10">
           <div className="w-4/6">
             <h2 className="text-5xl pb-20 border-b-2">
               Boosting the KYC flow's task success rate by 33%
@@ -60,7 +60,7 @@ export default function page() {
           </div>
         </FadeSlideIn>
         <FadeSlideIn className="bg-[#16141c]">
-          <div className="min-h-screen flex flex-col text-gray-200 w-2/3 mx-auto">
+          <div className="min-h-screen flex flex-col text-white/80 w-2/3 mx-auto">
             <div className="mt-auto">
               <div className="flex items-center gap-4">
                 <div className="bg-red-500 p-2 rounded-full">
@@ -132,17 +132,17 @@ export default function page() {
             </div>
           </section>
         </FadeSlideIn>
-        <FadeSlideIn className="bg-[#16141c] text-gray-200 my-10">
-          <div className="inset-0 absolute -z-10 flex items-center">
-            <div className="w-1/2 h-3/5 flex justify-center">
-              <img
-                src="/B2CIconWhite.png"
-                alt="logo"
-                className="w-1/2 h-full object-contain opacity-25 -rotate-45"
-              />
+        <FadeSlideIn className="bg-[#16141c] text-white/80 my-10">
+          <div className="h-[65vh] flex ">
+            <div className="inset-0 absolute -z-10 flex ">
+              <div className="w-1/2 h-3/6 flex justify-center">
+                <img
+                  src="/B2CIconWhite.png"
+                  alt="logo"
+                  className="w-1/2 h-4/5 object-contain opacity-25 -rotate-45"
+                />
+              </div>
             </div>
-          </div>
-          <div className="h-[70vh] flex ">
             <div className="h-3/5 my-auto flex ">
               <div className="w-1/4 px-10">
                 <p className="text-base rounded-full px-6 py-2 border border-opacity-10 w-fit">
@@ -150,7 +150,7 @@ export default function page() {
                 </p>
               </div>
               <div className="w-3/4 flex justify-center">
-                <h4 className="text-5xl w-3/4">
+                <h4 className="text-5xl w-4/5">
                   {" "}
                   This approach led to a 33% boost in task success rate and a
                   39% reduction in abandonment, streamlining the user journey
@@ -162,12 +162,42 @@ export default function page() {
               </div>
             </div>
           </div>
-        </FadeSlideIn>
-        <FadeSlideIn className="min-h-screen">
-          <div>
-
+          <div className="h-screen">
+            <img
+              src="/personSidepic.png"
+              alt="person"
+              className="w-full h-full object-cover object-top saturate-25"
+            />
           </div>
         </FadeSlideIn>
+
+        <div className="py-16 text-white/80">
+          <div className="flex flex-col w-1/2 gap-2">
+            <h4 className="text-2xl">Design process</h4>
+            <p className="">
+              We began with a comprehensive UX Audit, covering user research,
+              competitor analysis, heuristic evaluation, and accessibility
+              assessment. From there, we moved into the design phase and tested
+              the solution. After two rounds of prototyping and testing, we
+              achieved our desired outcome.
+            </p>
+          </div>
+          <section className="min-h-screen text-white/80">
+            <div className="flex justify-center items-center h-[60vh] flex-col gap-8 w-2/3 mx-auto">
+              <div className="px-5 py-2 w-fit rounded-full border border-opacity-25">
+                <button className="">Process</button>
+              </div>
+              <h4 className="text-4xl">
+                Effective planning is crucial in a redesign as it helps identify
+                user pain points early, set clear project goals, and align the
+                team's efforts on the most impactful solutions.
+              </h4>
+            </div>
+            <section className="flex gap-3 ">
+              <div className=""></div>
+            </section>
+          </section>
+        </div>
       </div>
     </div>
   );
