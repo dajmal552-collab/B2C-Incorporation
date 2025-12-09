@@ -140,7 +140,7 @@ export const Navbar: React.FC = () => {
                   </span>
                   {[
                     { heading: "Design", to: "/design" },
-                    { heading: "Product engineering", to: "/design" },
+                    { heading: "Product engineering", to: "/pages/products/products-engeenering" },
                     { heading: "Cloud", to: "/design" },
                     { heading: "Data services", to: "/pages/services/data-service" },
                     { heading: "AI Automation", to: "/pages/services/ai-service" },
