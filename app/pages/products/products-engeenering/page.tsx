@@ -9,6 +9,7 @@ import { ProcessProgress } from "../../../componants/ProgressBar";
 import { FAQForDataAI } from "@/app/componants/FQAForAI";
 import useInViewAnimation from "@/app/hooks/useInViewAnimation";
 import FadeSlideIn from "@/app/hooks/FadeSlideIn";
+import SoftwareProduct from "@/app/componants/Softwareproduct";
 
 
 interface Technology {
@@ -427,43 +428,9 @@ const steps = [
 
 </div>
 
-<div className="py-16 my-10 px-16 text-white bg-gray-100 w-full ">
-          <FadeSlideIn className="flex flex-col gap-6 py-5 px-6">
-            <div className="bg-gray-100 text-black px-6 md:px-16 py-20 ml-[250px] w-[1200] items-center text-center.">
-  <p className="uppercase tracking-wide mb-3 text-black font-sans">Process</p>
-  <h2 className="text-4xl md:text-4xl leading-tight mb-16">
-    Our software product engineering process
-  </h2>
-
-  {steps.map((step, index) => (
-    <div key={index} className="flex gap-6 mb-14 group cursor-pointer">
-      
-       {/* Auto Number + Vertical Line */}
-    <div className="flex flex-col items-center relative">
-      {/* Number */}
-      <div className="w-10 h-10 flex items-center justify-center rounded-full border border-blue-500
-                      group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 z-10 bg-white">
-        {index + 1}
-      </div>
-      
-      {/* Vertical Line */}
-      {index !== steps.length - 1 && (
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 h-full w-px bg-blue-500"></div>
-      )}
-    </div>
-      
-    {/* Text */}
-    <div>
-      <h3 className="text-xl font-semibold text-black underline group-hover:text-blue-500 transition-colors duration-300">
-        {step.title}
-      </h3>
-      <p className="mt-2 text-lg text-black font-sans">
-        {step.description}
-      </p>
-    </div>
-    </div>
-  ))}
-</div>
+<div className="py-16 my-10 px-16 text-black bg-gray-100 w-full ">
+          <FadeSlideIn>
+            <SoftwareProduct/>
           </FadeSlideIn>
         </div>
       <div className="w-8/12 mx-auto">

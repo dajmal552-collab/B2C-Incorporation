@@ -1,4 +1,3 @@
-// ONE FUNCTION VERSION
 
 "use client";
 
@@ -6,7 +5,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function MergedPage() {
-  /** FloatingWords Data */
   const points = [
     { label: "Empathy", hoverLabel: "We listen first", hoverSubtext: "And then respond with care", x: "50%", y: "10%" },
     { label: "Open mind", hoverLabel: "We stay flexible", hoverSubtext: "New perspectives welcome", x: "70%", y: "20%" },
@@ -16,7 +14,7 @@ export default function MergedPage() {
     { label: "Curiosity", hoverLabel: "We explore", hoverSubtext: "Curiosity drives excellence", x: "30%", y: "30%" },
   ];
 
-  const [hoverIndex, setHoverIndex] = useState(null);
+  const [hoverIndex, setHoverIndex] = useState<number|null>(null);
 
   /** ScrollSlider Data */
   const slides = [
@@ -42,12 +40,11 @@ export default function MergedPage() {
   ];
 
   const [current, setCurrent] = useState(0);
-  const goTo = (index) => setCurrent(Math.max(0, Math.min(index, slides.length - 1)));
+  const goTo = (index:number) => setCurrent(Math.max(0, Math.min(index, slides.length - 1)));
   const slide = slides[current];
 
   return (
     <div className="w-full h-full">
-      {/* Floating Words */}
       <div className="relative w-full h-screen bg-black overflow-hidden">
         {points.map((p, index) => {
           const isHover = hoverIndex === index;
@@ -71,7 +68,7 @@ export default function MergedPage() {
                 {isHover ? p.hoverLabel : p.label}
               </span>
 
-              <span className={`text-xl mt-1 transition-all duration-200 ${isHover ? "text-blue-600" : "text-gray-300"}`}>
+              <span className="`text-xl mt-1 transition-all duration-200 text-white">
                 {isHover ? p.hoverSubtext : ""}
               </span>
             </div>
