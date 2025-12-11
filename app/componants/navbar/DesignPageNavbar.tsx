@@ -11,14 +11,12 @@ export const DesignPageNavbar: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
-
       if (currentScroll > lastScrollY) {
         setIsScrollingDown(true);
       } else {
         setIsScrollingDown(false);
       }
       setHideNav(currentScroll > 200);
-
       setLastScrollY(currentScroll);
     };
 

@@ -294,6 +294,22 @@ export default function DesignPage() {
             </BorderAnimation>
           </div>
         </section>
+      <div className="bg-black max-w-full flex flex-col items-center text-center py-20">
+  <h2 className="text-gray-500 text-5xl font-sans">
+    Discover how we can elevate your product
+  </h2>
+
+  <h4 className="text-gray-600 text-2xl mt-10">
+    Check our service guide to explore the challenges we can solve for<br />
+    you, our approach and methodology and a step-by-step overview of<br />
+    our process.
+  </h4>
+
+  <button className="mt-10 bg-gray-900  text-gray-300 w-[200px] px-6 py-3  border-neutral rounded-full hover:bg-black hover:text-gray-700">
+    See how we work
+  </button>
+</div>
+
       </div>
 
       <style jsx>{`
