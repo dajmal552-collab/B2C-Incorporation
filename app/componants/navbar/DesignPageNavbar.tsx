@@ -12,14 +12,11 @@ export const DesignPageNavbar: React.FC = () => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
 
-      // Detect scroll direction
       if (currentScroll > lastScrollY) {
         setIsScrollingDown(true);
       } else {
         setIsScrollingDown(false);
       }
-
-      // Hide navbar after 200px
       setHideNav(currentScroll > 200);
 
       setLastScrollY(currentScroll);
