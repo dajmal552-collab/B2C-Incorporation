@@ -11,17 +11,12 @@ export const DesignPageNavbar: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
-
-      // Detect scroll direction
       if (currentScroll > lastScrollY) {
         setIsScrollingDown(true);
       } else {
         setIsScrollingDown(false);
       }
-
-      // Hide navbar after 200px
       setHideNav(currentScroll > 200);
-
       setLastScrollY(currentScroll);
     };
 
@@ -51,7 +46,7 @@ export const DesignPageNavbar: React.FC = () => {
                     { heading: "services", to: "/pages/designs/ourservices" },
                     { heading: "our works", to: "pages/designs/ourworks" },
                     { heading: "about us", to: "" },
-                    { heading: "contacts", to: "" },
+                    { heading: "contacts", to: "pages/contact" },
                   ].map((value, idx) => (
                     <Link
                       href={value.to}

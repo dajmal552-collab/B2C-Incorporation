@@ -25,10 +25,11 @@ const config = {
     },
   },
   animation: {
-    slide: "slide 10s linear infinite",
+    slide: "slide 5s linear infinite",
   },
     },
   },
+  
   plugins: [],
 };
 
