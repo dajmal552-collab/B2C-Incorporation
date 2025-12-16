@@ -166,7 +166,7 @@ export const Services = () => {
                         {service.description}
                       </p>
                       <div className="flex gap-5  mt-5 pb-5 border-b-2 ">
-                        <p className="text-xs font-bold font-sans bg-blue-800 w-fit text-white px-2 py-1 rounded-r-xl">
+                        <p className="text-xs font-bold font-sans bg-[#001a5a] w-fit text-white px-2 py-1 rounded-r-xl">
                           Specialized Solutions We Offer
                         </p>
                       </div>

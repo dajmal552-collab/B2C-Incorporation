@@ -64,11 +64,11 @@ export const LocationsSection: React.FC = () => {
                   of these locations.
                 </p>
                 <a
-                  href="mailto:rfq@effectivesoft.com"
+                  href="mailto:rfq@b2cinc.com"
                   className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition"
                 >
                   <Mail className="w-5 h-5" />
-                  <span>rfq@effectivesoft.com</span>
+                  <span>rfq@b2cinc.com</span>
                 </a>
               </div>
             </div>
