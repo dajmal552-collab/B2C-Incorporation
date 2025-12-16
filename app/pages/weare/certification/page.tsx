@@ -14,31 +14,26 @@ export default function Certification() {
               </h2>
 
               <p className="mt-8 text-xl text-gray-600 leading-relaxed">
-                Here you can find the recognized accomplishments and certifications obtained by EffectiveSoft,
-                affirming our expertise, adherence to industry standards, and commitment to excellence.
+                Here you can find the recognized accomplishments and
+                certifications obtained by EffectiveSoft, affirming our
+                expertise, adherence to industry standards, and commitment to
+                excellence.
               </p>
 
               <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-                Explore our collection of certificates, which serve as tangible evidence
-                of our dedication to delivering high-quality IT solutions and instill trust
-                in potential clients and partners.
+                Explore our collection of certificates, which serve as tangible
+                evidence of our dedication to delivering high-quality IT
+                solutions and instill trust in potential clients and partners.
               </p>
             </div>
 
             <div className="w-full">
-              <div className="grid grid-cols-3 gap-0 max-w-2xl ml-auto">
-                <div className="aspect-[1/0.8] relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-end">
-                    <div className="w-full h-full bg-blue-600 rounded-t-full"></div>
-                  </div>
-                </div>
-                <div className="aspect-[1/0.8] relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-end">
-                    <div className="w-full h-full bg-blue-200 rounded-t-full"></div>
-                  </div>
-                </div>
+              <div className="grid grid-cols-3 gap-[10px] max-w-2xl ml-auto">
+                <div className="aspect-[1/0.85] bg-blue-600 rounded-[2rem]" />
 
-                <div className="aspect-[1/0.8] relative overflow-hidden rounded-full">
+                <div className="aspect-[1/0.85] bg-blue-300 rounded-[2rem]" />
+
+                <div className="aspect-[1/0.85] overflow-hidden rounded-[2rem]">
                   <img
                     src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
                     alt="Conference room"
@@ -46,8 +41,8 @@ export default function Certification() {
                   />
                 </div>
 
-                <div className="col-span-3 grid grid-cols-3 gap-0">
-                  <div className="col-span-2 aspect-[2/0.8] relative overflow-hidden rounded-[12%]">
+                <div className="col-span-3 grid grid-cols-3 gap-[10px]">
+                  <div className="col-span-2 aspect-[2/0.85] overflow-hidden rounded-[2.2rem]">
                     <img
                       src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80"
                       alt="Business team"
@@ -55,38 +50,22 @@ export default function Certification() {
                     />
                   </div>
 
-                  <div className="aspect-[1/0.8] relative overflow-hidden rounded-full">
-                    <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600"></div>
-                  </div>
+                  <div className="aspect-[1/0.85] rounded-[2.2rem] bg-gradient-to-br from-blue-500 to-purple-600" />
                 </div>
 
-                <div className="aspect-[1/0.8] relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-start">
-                    <div className="w-full h-full bg-blue-200 rounded-b-full"></div>
-                  </div>
-                </div>
+                <div className="aspect-[1/0.85] bg-blue-300 rounded-[2rem]" />
 
-                <div className="aspect-[1/0.8] relative overflow-hidden rounded-full">
+                <div className="aspect-[1/0.85] overflow-hidden rounded-[2rem]">
                   <img
                     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
-                    alt="Woman presenting"
+                    alt="Presenter"
                     className="w-full h-full object-cover"
                   />
                 </div>
 
-                <div className="aspect-[1/0.8] relative overflow-hidden">
-                  <div className="w-full h-full flex gap-2">
-                    <div className="flex-1 relative">
-                      <div className="absolute inset-0 flex items-start">
-                        <div className="w-full h-full bg-lime-400 rounded-b-full"></div>
-                      </div>
-                    </div>
-                    <div className="flex-1 relative">
-                      <div className="absolute inset-0 flex items-start">
-                        <div className="w-full h-full bg-lime-400 rounded-b-full"></div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="aspect-[1/0.85] grid grid-cols-2 gap-[10px] rounded-[2rem]">
+                  <div className="bg-lime-400 rounded-[1.6rem]" />
+                  <div className="bg-lime-400 rounded-[1.6rem]" />
                 </div>
               </div>
             </div>
@@ -103,9 +82,10 @@ export default function Certification() {
               </h2>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-12 max-w-3xl">
-                We hold a range of certifications that highlight our commitment to excellence and industry standards.
-                These certifications validate our ability to deliver high-quality products and services and showcase our
-                dedication to continuous improvement.
+                We hold a range of certifications that highlight our commitment
+                to excellence and industry standards. These certifications
+                validate our ability to deliver high-quality products and
+                services and showcase our dedication to continuous improvement.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -120,9 +100,7 @@ export default function Certification() {
                   <h3 className="text-lg font-medium text-gray-900 mb-2">
                     ISO/IEC 27001:2022 (B2C Corp.)
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    CERT International
-                  </p>
+                  <p className="text-gray-600 text-sm">CERT International</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
@@ -136,9 +114,7 @@ export default function Certification() {
                   <h3 className="text-lg font-medium text-gray-900 mb-2">
                     ISO/IEC 27001:2022 (B2C Poland)
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    CERT International
-                  </p>
+                  <p className="text-gray-600 text-sm">CERT International</p>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
@@ -200,8 +176,10 @@ export default function Certification() {
                 </h2>
 
                 <p className="text-gray-600 text-lg leading-relaxed mb-12 max-w-3xl">
-                  Our certificates of compliance demonstrate our adherence to regulatory requirements and industry best practices, 
-                  ensuring the highest standards of quality and security in our operations.
+                  Our certificates of compliance demonstrate our adherence to
+                  regulatory requirements and industry best practices, ensuring
+                  the highest standards of quality and security in our
+                  operations.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -271,96 +249,7 @@ export default function Certification() {
                 </div>
               </div>
 
-              <div id="personal-certificates" className="mt-20">
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                  Personal employee certificates
-                </h2>
-
-                <p className="text-gray-600 text-lg leading-relaxed mb-12 max-w-3xl">
-                  Our team members hold numerous professional certifications that validate their expertise 
-                  and commitment to continuous learning in their respective fields.
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-                  <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
-                    <div className="w-24 h-24 mb-6 flex items-center justify-center">
-                      <img
-                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&q=80"
-                        alt="AWS Certification"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      AWS Certified Solutions Architect
-                    </h3>
-                  </div>
-
-                  <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
-                    <div className="w-24 h-24 mb-6 flex items-center justify-center">
-                      <img
-                        src="https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=200&q=80"
-                        alt="Azure Certification"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      Microsoft Azure Administrator
-                    </h3>
-                  </div>
-
-                  <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
-                    <div className="w-24 h-24 mb-6 flex items-center justify-center">
-                      <img
-                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80"
-                        alt="Google Cloud Certification"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      Google Cloud Professional
-                    </h3>
-                  </div>
-
-                  <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
-                    <div className="w-24 h-24 mb-6 flex items-center justify-center">
-                      <img
-                        src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&q=80"
-                        alt="Scrum Certification"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      Certified Scrum Master
-                    </h3>
-                  </div>
-
-                  <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
-                    <div className="w-24 h-24 mb-6 flex items-center justify-center">
-                      <img
-                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&q=80"
-                        alt="PMP Certification"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      Project Management Professional
-                    </h3>
-                  </div>
-
-                  <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
-                    <div className="w-24 h-24 mb-6 flex items-center justify-center">
-                      <img
-                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80"
-                        alt="DevOps Certification"
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-2">
-                      Certified DevOps Engineer
-                    </h3>
-                  </div>
-                </div>
-              </div>
+             
 
               <div id="industry-recognition" className="mt-20">
                 <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -368,8 +257,9 @@ export default function Certification() {
                 </h2>
 
                 <p className="text-gray-600 text-lg leading-relaxed mb-12 max-w-3xl">
-                  We are proud to be recognized by leading industry organizations and publications for our 
-                  innovative solutions and commitment to excellence in software development.
+                  We are proud to be recognized by leading industry
+                  organizations and publications for our innovative solutions
+                  and commitment to excellence in software development.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -384,9 +274,7 @@ export default function Certification() {
                     <h3 className="text-lg font-medium text-gray-900 mb-2">
                       Top Software Development Company 2024
                     </h3>
-                    <p className="text-gray-600 text-sm">
-                      Clutch
-                    </p>
+                    <p className="text-gray-600 text-sm">Clutch</p>
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
@@ -400,9 +288,7 @@ export default function Certification() {
                     <h3 className="text-lg font-medium text-gray-900 mb-2">
                       Best Enterprise Software Solution
                     </h3>
-                    <p className="text-gray-600 text-sm">
-                      TechReview
-                    </p>
+                    <p className="text-gray-600 text-sm">TechReview</p>
                   </div>
 
                   <div className="bg-white border border-gray-200 rounded-lg p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
@@ -457,14 +343,6 @@ export default function Certification() {
                       className="text-gray-600 hover:text-blue-600 transition-colors flex items-center border-l-4 border-transparent pl-4 py-2 hover:border-gray-300"
                     >
                       Certificates of compliance
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#personal-certificates"
-                      className="text-gray-600 hover:text-blue-600 transition-colors flex items-center border-l-4 border-transparent pl-4 py-2 hover:border-gray-300"
-                    >
-                      Personal employee certificates
                     </a>
                   </li>
                   <li>
