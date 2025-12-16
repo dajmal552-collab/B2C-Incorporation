@@ -61,7 +61,7 @@ export default function CareersPage() {
               Even if you haven't found a suitable position listed at the moment,
               we encourage you to submit your resume through our online form or via e‑mail
               <br />
-              <span className="font-medium">bcd.media.com</span>.
+              <span className="font-medium">bcd.media@gmail.com</span>.
             </p>
 
             <div>
