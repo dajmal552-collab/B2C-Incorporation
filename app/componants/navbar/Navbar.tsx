@@ -218,7 +218,7 @@ export const Navbar: React.FC = () => {
                       to: "/",
                     },
                     { heading: "Leadership", to: "/pages/weare/leadership" },
-                    { heading: "Expertise", to: "/" },
+                    { heading: "Expertise", to: "/pages/weare/experts" },
                     { heading: "Carrers", to: "/pages/weare/leadership/carrers" },
                     { heading: "Certification", to: "/pages/weare/certification" },
                   ].map((value, idx) => (
