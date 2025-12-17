@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
             <div className=" flex flex-col sm:flex-row gap-4 ">
               <a
                 href="/contact"
-                className="font-serif px-10 py-2 bg-blue-500 hover:bg-blue-800 transition-all duration-500"
+                className="font-serif px-10 py-2 bg-blue-500 hover:bg-blue-800 transition-all duration-500 text-white/90"
               >
                 Let's Talk
               </a>

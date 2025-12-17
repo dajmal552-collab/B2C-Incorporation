@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <h3 className="text-xl font-bold text-white mb-4">Contact Us</h3>
           <p className="mb-2">1234 Software Street</p>
           <p className="mb-2">Tech City, TC 56789</p>
-          <p className="mb-2">Email: info@effectivesoft.com</p>
+          <p className="mb-2">Email: info@b2cinc.com</p>
           <p className="mb-2">Phone: +1 (123) 456-7890</p>
         </div>
 
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Effectivesoft. All rights
+            &copy; {new Date().getFullYear()} B2CINC. All rights
             reserved.
           </p>
         </div>

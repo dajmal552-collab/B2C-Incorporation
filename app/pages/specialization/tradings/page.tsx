@@ -24,9 +24,7 @@ interface TechCategory {
 export default function AIDevelopementServices() {
   const [active, setActive] = useState(0);
 
-  const [activeTab, setActiveTab] = useState<string>(
-    "Programming languages"
-  );
+  const [activeTab, setActiveTab] = useState<string>("Programming languages");
   const { ref, inView } = useInViewAnimation();
 
   const tabs = [
@@ -303,7 +301,7 @@ export default function AIDevelopementServices() {
             </h2>
             <p className="text-xl py-8 w-4/5 font-sans">
               As a renowned provider of trading platform development services
-              with 20+ years of IT experience, EffectiveSoft offers unparalleled
+              with 20+ years of IT experience, B2CINC offers unparalleled
               solutions to various businesses in the financial sector. In
               addition to building robust, secure, and scalable trading software
               for browsers, desktops, and mobile devices, we provide technical
@@ -341,7 +339,7 @@ export default function AIDevelopementServices() {
           <div className="flex flex-col w-1/2 h-3/4 gap-3 text-white">
             <h2 className="text-2xl font-medium">Clutch Proven</h2>
             <p className="text-lg pt-6">
-              Team up with EffectiveSoft to explore the limitless potential of
+              Team up with B2CINC to explore the limitless potential of
               artificial intelligence (AI)! From AI strategy building and data
               analysis to AI integration and deployment, our comprehensive
               artificial intelligence development services are tailored to
@@ -418,63 +416,62 @@ export default function AIDevelopementServices() {
       </div>
 
       <div className="w-8/12 mx-auto">
-        
-         <section className="w-full bg-white py-20">
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Header */}
-        <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-gray-500">
-          Testimonial
-        </p>
-        <h2 className="mb-12 text-4xl font-bold text-gray-900">
-          Our clients say
-        </h2>
+        <section className="w-full bg-white py-20">
+          <div className="mx-auto max-w-7xl px-6">
+            {/* Header */}
+            <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-gray-500">
+              Testimonial
+            </p>
+            <h2 className="mb-12 text-4xl font-bold text-gray-900">
+              Our clients say
+            </h2>
 
-        {/* Card */}
-        <div className="relative rounded-lg bg-gray-50 px-12 py-16">
-          {/* Logo */}
-          <div className="absolute right-12 top-12 text-xl font-bold">
-            <span className="text-gray-900">CITY</span>
-            <span className="text-yellow-400">INDEX</span>
-          </div>
+            {/* Card */}
+            <div className="relative rounded-lg bg-gray-50 px-12 py-16">
+              {/* Logo */}
+              <div className="absolute right-12 top-12 text-xl font-bold">
+                <span className="text-gray-900">CITY</span>
+                <span className="text-yellow-400">INDEX</span>
+              </div>
 
-          {/* Highlighted Title */}
-          <h3 className="mb-6 max-w-4xl text-3xl font-extrabold leading-tight text-white">
-            <span className="bg-blue-600 px-2 py-1">
-              ATTENTION TO DETAIL AND
-            </span>
-            <br />
-            <span className="mt-2 inline-block bg-blue-600 px-2 py-1">
-              RELIABILITY ON DELIVERY DATES
-            </span>
-          </h3>
+              {/* Highlighted Title */}
+              <h3 className="mb-6 max-w-4xl text-3xl font-extrabold leading-tight text-white">
+                <span className="bg-blue-600 px-2 py-1">
+                  ATTENTION TO DETAIL AND
+                </span>
+                <br />
+                <span className="mt-2 inline-block bg-blue-600 px-2 py-1">
+                  RELIABILITY ON DELIVERY DATES
+                </span>
+              </h3>
 
-          {/* Description */}
-          <p className="mb-10 max-w-3xl text-lg leading-relaxed text-gray-600">
-            Since our first engagement a year ago, I have been impressed not
-            only by the quality of work that EffectiveSoft have done for City
-            Index but also their attention to detail and reliability on delivery
-            dates.
-          </p>
+              {/* Description */}
+              <p className="mb-10 max-w-3xl text-lg leading-relaxed text-gray-600">
+                Since our first engagement a year ago, I have been impressed not
+                only by the quality of work that B2CINC have done for City Index
+                but also their attention to detail and reliability on delivery
+                dates.
+              </p>
 
-          {/* Author */}
-          <div className="flex items-center gap-4">
-            <div className="h-14 w-14 overflow-hidden rounded-full">
-             <Image
-  src="/AI.png"
-  alt="Arthur Grimley"
-  width={56}
-  height={56}
-/>
+              {/* Author */}
+              <div className="flex items-center gap-4">
+                <div className="h-14 w-14 overflow-hidden rounded-full">
+                  <Image
+                    src="/AI.png"
+                    alt="Arthur Grimley"
+                    width={56}
+                    height={56}
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Arthur Grimley</p>
+                  <p className="text-sm text-gray-500">CIO UK</p>
+                  <p className="text-sm text-gray-500">CityIndex Group</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <p className="font-semibold text-gray-900">Arthur Grimley</p>
-              <p className="text-sm text-gray-500">CIO UK</p>
-              <p className="text-sm text-gray-500">CityIndex Group</p>
-            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
         <div className="py-16 px-8 max-h-screen">
           {/* Header */}

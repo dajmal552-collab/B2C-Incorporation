@@ -343,9 +343,9 @@ We address these issues with secure payment gateway integration and custom payme
   {/* RIGHT — TEXT */}
   <div className="w-1/2">
     <p className="text-lg leading-relaxed font-sans">
-      “EffectiveSoft's product engineers have extensive skill sets in project 
+      B2CINC's product engineers have extensive skill sets in project 
       management, interpersonal communication, creative thinking, design, and 
-      technical expertise...”
+      technical expertise...
     </p>
 
     <div className="mt-5">

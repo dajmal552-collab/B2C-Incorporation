@@ -180,7 +180,7 @@ export default function DataServices () {
         <div className='flex py-16 h-5/6 mt-28'>
           <div className='flex flex-col w-1/2 h-3/4 gap-3 '>
             <h2 className='text-5xl font-medium w-3/5'>Data Analytics Services and Solutions</h2>
-            <p className='text-2xl py-8 w-4/5'>Team up with EffectiveSoft to explore the limitless potential of artificial intelligence (AI)! From AI strategy building and data analysis to AI integration and deployment, our comprehensive artificial intelligence development services are tailored to address challenges across domains.</p>
+            <p className='text-2xl py-8 w-4/5'>Team up with B2CINC to explore the limitless potential of artificial intelligence (AI)! From AI strategy building and data analysis to AI integration and deployment, our comprehensive artificial intelligence development services are tailored to address challenges across domains.</p>
             <div className='flex gap-5 text-lg font-medium w-5/6'>
               <button className='bg-blue-700 px-8 py-2 hover:bg-transparent w-full text-white hover:text-black transition'>Let's talk</button>
               <button className='bg-transparent border-2 border-blue-700 font-bold w-full px-8 py-2 hover:bg-blue-700 transition hover:text-whi'>View Portfolio</button>
@@ -211,7 +211,7 @@ export default function DataServices () {
         </section>
       </div>
       <div className='flex justify-center py-16'>
-        <img src="https://www.effectivesoft.com/wp/wp-content/uploads/ESThumbnails/34103/330.light-2.png" alt="Data analytics services" loading="lazy" className='w-4/6' />
+        <img src="https://www.b2cinc.com/wp/wp-content/uploads/ESThumbnails/34103/330.light-2.png" alt="Data analytics services" loading="lazy" className='w-4/6' />
       </div>
 
       <div className='bg-slate-100'>

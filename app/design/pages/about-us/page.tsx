@@ -7,25 +7,61 @@ const SLIDE_SCROLL_HEIGHT = 1000;
 
 export default function MergedPage() {
   const points = [
-    { label: "Empathy", hoverLabel: "We listen first", hoverSubtext: "And then respond with care", x: "50%", y: "10%" },
-    { label: "Open mind", hoverLabel: "We stay flexible", hoverSubtext: "New perspectives welcome", x: "70%", y: "20%" },
-    { label: "Respect", hoverLabel: "Mutual respect", hoverSubtext: "Always at the core", x: "55%", y: "45%" },
-    { label: "Aftercare", hoverLabel: "We stay with you", hoverSubtext: "Even after it's done", x: "60%", y: "70%" },
-    { label: "Deep expertise", hoverLabel: "Years of practice", hoverSubtext: "We don’t guess—we know", x: "35%", y: "65%" },
-    { label: "Curiosity", hoverLabel: "We explore", hoverSubtext: "Curiosity drives excellence", x: "30%", y: "30%" },
+    {
+      label: "Empathy",
+      hoverLabel: "We listen first",
+      hoverSubtext: "And then respond with care",
+      x: "50%",
+      y: "10%",
+    },
+    {
+      label: "Open mind",
+      hoverLabel: "We stay flexible",
+      hoverSubtext: "New perspectives welcome",
+      x: "70%",
+      y: "20%",
+    },
+    {
+      label: "Respect",
+      hoverLabel: "Mutual respect",
+      hoverSubtext: "Always at the core",
+      x: "55%",
+      y: "45%",
+    },
+    {
+      label: "Aftercare",
+      hoverLabel: "We stay with you",
+      hoverSubtext: "Even after it's done",
+      x: "60%",
+      y: "70%",
+    },
+    {
+      label: "Deep expertise",
+      hoverLabel: "Years of practice",
+      hoverSubtext: "We don’t guess—we know",
+      x: "35%",
+      y: "65%",
+    },
+    {
+      label: "Curiosity",
+      hoverLabel: "We explore",
+      hoverSubtext: "Curiosity drives excellence",
+      x: "30%",
+      y: "30%",
+    },
   ];
 
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
-   const slides = [
+  const slides = [
     {
       image: "/AI.png",
       title: "our journey",
       description:
-        "Our design studio was founded within a outsourcing software development company, giving us a distinct advantage. Having worked across numerous industries, we've gained invaluable insights into various domains. This broad experience allows us to design with a deep understanding of different user needs, creating intuitive and impactful user experiences that address specific business challenges."
+        "Our design studio was founded within a outsourcing software development company, giving us a distinct advantage. Having worked across numerous industries, we've gained invaluable insights into various domains. This broad experience allows us to design with a deep understanding of different user needs, creating intuitive and impactful user experiences that address specific business challenges.",
     },
     {
-      image: "/AI.png",
+      image: "/aws.png",
       title: "our approach",
       description:
         "One of our key differentiators is the synergy we’ve built with our in-house development team. Our designers collaborate closely with developers, ensuring that the designs we create are not only visually appealing but also technically sound. This means we deliver solutions that leverage the latest technologies, optimized for performance, scalability, and ease of implementation.",
@@ -72,14 +108,21 @@ export default function MergedPage() {
             <div
               key={index}
               className="absolute flex flex-col gap-3 items-start cursor-pointer mt-[80px] animate-slide"
-              style={{ left: p.x, top: p.y, transform: "translate(-50%, -50%)" }}
+              style={{
+                left: p.x,
+                top: p.y,
+                transform: "translate(-50%, -50%)",
+              }}
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
             >
               {!isHover ? (
                 <div className="h-2 w-2 bg-white rounded-full" />
               ) : (
-                <svg viewBox="0 0 100 100" className="w-6 h-6 fill-blue-600">
+                <svg
+                  viewBox="0 0 100 100"
+                  className="w-6 h-6 fill-blue-600 animate-spin"
+                >
                   <path d="M50 5 L58 28 L83 17 L66 38 L90 50 L66 62 L83 83 L58 72 L50 95 L42 72 L17 83 L34 62 L10 50 L34 38 L17 17 L42 28 Z" />
                 </svg>
               )}
@@ -107,6 +150,10 @@ export default function MergedPage() {
         style={{ height: `${slides.length * SLIDE_SCROLL_HEIGHT}px` }}
       >
         <div className="sticky top-0 h-screen flex overflow-hidden">
+          <div
+            className="absolute right-0 top-10 w-[400px] h-[400px] 
+              bg-blue-700/50 blur-[120px] rounded-full"
+          ></div>
           {/* Image */}
           <motion.div
             key={slides[current].image}
@@ -120,7 +167,7 @@ export default function MergedPage() {
               className="w-full h-full object-cover"
             />
           </motion.div>
-          <div className="w-1/2 bg-[#3E50FB] text-white px-28 py-12 flex flex-col justify-between">
+          <div className="w-1/2 bg-transparent text-white px-28 py-12 flex flex-col justify-between">
             <div>
               <div className="text-sm opacity-60 mb-6">
                 {String(current + 1).padStart(2, "0")} /{" "}

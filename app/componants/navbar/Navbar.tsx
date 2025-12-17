@@ -71,32 +71,33 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="flex justify-center relative">
             <ul className="flex gap-5">
-              {["What we do", "Who we are", "Insights", "Case Studies"].map(
-                (value, idx) => (
-                  <div key={idx} className="relative">
-                    <li
-                      key={idx}
-                      onMouseEnter={() => {
-                        setNavHover(true);
-                        setIndex(idx);
-                        setSelectedNav(value);
-                      }}
-                      className="flex items-center gap-1 hover:cursor-pointer hover:text-gray-400 transition-all duration-300"
-                    >
-                      {value}
-                      {value !== "Case Studies" ? (
-                        navHover && index === idx ? (
-                          <ChevronDown className="w-4 h-4" />
-                        ) : (
-                          <ChevronRight className="w-4 h-4" />
-                        )
+              {["What we do", "Who we are", "Insights"].map((value, idx) => (
+                <div key={idx} className="relative">
+                  <li
+                    key={idx}
+                    onMouseEnter={() => {
+                      setNavHover(true);
+                      setIndex(idx);
+                      setSelectedNav(value);
+                    }}
+                    className="flex items-center gap-1 hover:cursor-pointer hover:text-gray-400 transition-all duration-300"
+                  >
+                    {value}
+                    {value !== "Case Studies" ? (
+                      navHover && index === idx ? (
+                        <ChevronDown className="w-4 h-4" />
                       ) : (
-                        <></>
-                      )}
-                    </li>
-                  </div>
-                )
-              )}
+                        <ChevronRight className="w-4 h-4" />
+                      )
+                    ) : (
+                      <></>
+                    )}
+                  </li>
+                </div>
+              ))}
+              <Link href={"/design/pages/our-works"} className="">
+                CaseStudies
+              </Link>
             </ul>
           </div>
           <div className=" flex justify-center">
@@ -140,10 +141,19 @@ export const Navbar: React.FC = () => {
                   </span>
                   {[
                     { heading: "Design", to: "/design" },
-                    { heading: "Product engineering", to: "/pages/products/products-engeenering" },
+                    {
+                      heading: "Product engineering",
+                      to: "/pages/products/products-engeenering",
+                    },
                     { heading: "Cloud", to: "/pages/products/cloud" },
-                    { heading: "Data services", to: "/pages/services/data-service" },
-                    { heading: "AI Automation", to: "/pages/services/ai-service" },
+                    {
+                      heading: "Data services",
+                      to: "/pages/services/data-service",
+                    },
+                    {
+                      heading: "AI Automation",
+                      to: "/pages/services/ai-service",
+                    },
                   ].map((value, idx) => (
                     <Link
                       href={value.to}
@@ -158,19 +168,21 @@ export const Navbar: React.FC = () => {
                   <span className="text-gray-500 text-xs font-bold mb-1">
                     Fintech specialization
                   </span>
-                  {[ {
+                  {[
+                    {
                       heading: "Trading Platform",
                       to: "/pages/finetech/trading",
                     },
-                  {
-                    heading: "Blockchain Development",
+                    {
+                      heading: "Blockchain Development",
                       to: "/pages/finetech/blockchain",
-                  },
-                {
+                    },
+                    {
                       heading: "Payment Gateway Integration",
                       to: "/pages/finetech/paymentgateway",
-                }].map((value, idx) => (
-                   <Link
+                    },
+                  ].map((value, idx) => (
+                    <Link
                       href={value.to}
                       key={idx}
                       className="hover:text-blue-500 transition hover:cursor-pointer"
@@ -188,8 +200,14 @@ export const Navbar: React.FC = () => {
                       heading: "Real State",
                       to: "/pages/specialization/realstate",
                     },
-                    { heading: "Trading Platform", to: "/pages/specialization/tradings" },
-                    { heading: "Online Reputation Management(ORM's)", to: "/pages/specialization/orm" },
+                    {
+                      heading: "Trading Platform",
+                      to: "/pages/specialization/tradings",
+                    },
+                    {
+                      heading: "Online Reputation Management(ORM's)",
+                      to: "/pages/specialization/orm",
+                    },
                   ].map((value, idx) => (
                     <Link
                       href={value.to}
@@ -239,7 +257,7 @@ export const Navbar: React.FC = () => {
                     </div>
                     <p className="">
                       We are extremely satisfied with our collaboration with
-                      EffectiveSoft. We engaged them for business analysis,
+                      B2CINC. We engaged them for business analysis,
                       UI/UX design, web development, and testing.
                     </p>
                     <div className="flex flex-col justify-start pt-5">

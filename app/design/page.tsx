@@ -2,12 +2,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Snowflake, Volleyball } from "lucide-react";
 import Link from "next/link";
-import { DesignPageNavbar } from "../componants/navbar/DesignPageNavbar";
 import { ButtonsWithArcs } from "../componants/ButtonsWithArcs";
 import { BorderAnimation } from "../componants/BorderAnimation";
 import { designCards } from "../componants/CaseStudies";
 import { useCursor } from "../hooks/CursorContext";
 import { useRouter } from "next/navigation";
+import TestimonialsSection from "../componants/Testimonials";
+import TestimonialsSectionForDesign from "../componants/TestimonialsForDesignSection";
 
 interface Props {
   title: string;
@@ -100,7 +101,7 @@ export default function DesignHome() {
   }, [texts.length]);
 
   return (
-    <div className="w-full  bg-black">
+    <div className="w-full bg-black">
       <section className="relative bg-black h-screen ">
         <video
           autoPlay
@@ -275,63 +276,12 @@ export default function DesignHome() {
           </div>
         </section>
       </main>
-      <section className="flex flex-col py-15 bg-black min-h-screen justify-center items-center">
-        <div className="relative w-full min-h-[50vh] bg-[#000f36] p-8 group flex items-center">
-          <button
-            onClick={() => scroll("left")}
-            className="absolute z-10 left-10 text-blue-500 border-2 border-blue-800 p-5 rounded-full font-bold
-          opacity-0 -translate-x-6 transition-all duration-300 ease-in-out
-          group-hover:opacity-100 group-hover:translate-x-0
-          pointer-events-none group-hover:pointer-events-auto"
-          >
-            <ArrowLeft className="w-5 h-5" />
-          </button>
-
-          {/* Right Button */}
-          <button
-            onClick={() => scroll("right")}
-            className="absolute z-10 right-10 text-blue-500 border-2 border-blue-800 p-5 rounded-full font-bold
-          opacity-0 -translate-x-6 transition-all duration-300 ease-in-out
-          group-hover:opacity-100 group-hover:translate-x-0
-          pointer-events-none group-hover:pointer-events-auto"
-          >
-            <ArrowRight className="w-5 h-5" />
-          </button>
-          <div
-            ref={scrollRef}
-            className="flex flex-row overflow-x-hidden snap-both snap-mandatory scroll-smooth w-full"
-            onScroll={() => {
-              if (scrollRef.current) {
-                const scrollLeft = scrollRef.current.scrollLeft;
-                const itemWidth = scrollRef.current.offsetWidth / 2;
-                const activeIndex = Math.round(scrollLeft / itemWidth);
-                setIndex(activeIndex % 10);
-              }
-            }}
-          >
-            {Array.from({ length: 10 }).map((_, i) => (
-              <div
-                key={i}
-                className={`flex flex-col min-w-[50%] text-start snap-center transition-opacity duration-300 ${
-                  i === index ? "opacity-100" : "opacity-50"
-                }`}
-              >
-                <h4 className="py-5 text-2xl text-white/70 text-start ml-[20px]">
-                  Keith Nolan{" "}
-                  <span className="text-gray-700 text-start text-xl">
-                    Head of R&D, NDA
-                  </span>
-                </h4>
-
-                <p className="flex px-6 py-10 text-white/90 font-thin w-5/6 text-2xl transition-all duration-300 hover:opacity-100">
-                  From the very beginning of our collaboration, it became
-                  evident that we had found a team that consistently performs
-                  above expectations, pushing the limits of creativity and
-                  consistently delivering industry-leading design concepts.
-                </p>
-              </div>
-            ))}
-          </div>
+      <section className="flex flex-col bg-black justify-center items-end">
+        <div
+          ref={scrollRef}
+          className="flex flex-row overflow-x-hidden snap-both snap-mandatory scroll-smooth w-10/12 ml-auto"
+        >
+          <TestimonialsSectionForDesign />
         </div>
       </section>
       <section className="min-h-screen text-white flex flex-col  justify-between">

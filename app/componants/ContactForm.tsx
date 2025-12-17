@@ -1,43 +1,47 @@
-"use client"
-import { useState } from 'react';
-import { CheckCircle, Upload, Info } from 'lucide-react';
+"use client";
+import { useState } from "react";
+import { CheckCircle, Upload, Info } from "lucide-react";
 
-export const ContactForm=()=> {
+export const ContactForm = () => {
   const [formData, setFormData] = useState({
-    challenge: '',
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
+    challenge: "",
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
     secureNDA: false,
-    consent: false
+    consent: false,
   });
 
   // const [isRecording, setIsRecording] = useState(false);
 
   const handleSubmit = () => {
-    if (!formData.challenge || !formData.name || !formData.email || !formData.consent) {
-      alert('Please fill in all required fields and accept the consent.');
+    if (
+      !formData.challenge ||
+      !formData.name ||
+      !formData.email ||
+      !formData.consent
+    ) {
+      alert("Please fill in all required fields and accept the consent.");
       return;
     }
-    console.log('Form submitted:', formData);
-    alert('Message sent successfully!');
+    console.log("Form submitted:", formData);
+    alert("Message sent successfully!");
   };
 
-const handleInputChange = (
-  e: React.ChangeEvent<
-    HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-  >
-) => {
-  const { name, value, type } = e.target;
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
+    const { name, value, type } = e.target;
 
-  setFormData(prev => ({
-    ...prev,
-    [name]: type === "checkbox"
-      ? (e.target as HTMLInputElement).checked
-      : value
-  }));
-};
+    setFormData((prev) => ({
+      ...prev,
+      [name]:
+        type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+    }));
+  };
 
   // const toggleRecording = () => {
   //   setIsRecording(!isRecording);
@@ -51,31 +55,37 @@ const handleInputChange = (
         <p className="text-lg mb-8 opacity-90">
           Fill out the form, and we've got you covered.
         </p>
-        
+
         <h2 className="text-xl font-semibold mb-6">What happens next?</h2>
-        
+
         <div className="space-y-6">
           <div className="flex items-start gap-4">
             <CheckCircle className="w-6 h-6 mt-1 shrink-0" />
             <div>
-              <p className="text-base">Our expert will follow up after reviewing your needs.</p>
+              <p className="text-base">
+                Our expert will follow up after reviewing your needs.
+              </p>
             </div>
           </div>
-          
+
           <div className="flex items-start gap-4">
             <CheckCircle className="w-6 h-6 mt-1 shrink-0" />
             <div>
-              <p className="text-base">If required, we'll sign an NDA to ensure privacy.</p>
+              <p className="text-base">
+                If required, we'll sign an NDA to ensure privacy.
+              </p>
             </div>
           </div>
-          
+
           <div className="flex items-start gap-4">
             <CheckCircle className="w-6 h-6 mt-1 shrink-0" />
             <div>
-              <p className="text-base">Our Pre-Sales Manager will send you a proposal.</p>
+              <p className="text-base">
+                Our Pre-Sales Manager will send you a proposal.
+              </p>
             </div>
           </div>
-          
+
           <div className="flex items-start gap-4">
             <CheckCircle className="w-6 h-6 mt-1 shrink-0" />
             <div>
@@ -88,8 +98,10 @@ const handleInputChange = (
       {/* Right Section - Contact Form */}
       <div className="w-3/5 bg-slate-900 p-12 flex flex-col justify-center">
         <h2 className="text-3xl font-bold text-white mb-2">Contact us</h2>
-        <p className="text-gray-300 mb-8">Our team would love to hear from you.</p>
-        
+        <p className="text-gray-300 mb-8">
+          Our team would love to hear from you.
+        </p>
+
         <div className="space-y-6">
           {/* Challenge/Goal */}
           <div className="relative">
@@ -154,7 +166,10 @@ const handleInputChange = (
               className="w-4 h-4 rounded border-gray-600"
               id="nda"
             />
-            <label htmlFor="nda" className="text-gray-300 flex items-center gap-2 cursor-pointer">
+            <label
+              htmlFor="nda"
+              className="text-gray-300 flex items-center gap-2 cursor-pointer"
+            >
               Secure data with NDA first
               <Info className="w-4 h-4 text-gray-500" />
             </label>
@@ -191,12 +206,20 @@ const handleInputChange = (
               className="w-4 h-4 mt-1 rounded border-gray-600"
               id="consent"
             />
-            <label htmlFor="consent" className="text-gray-400 text-sm leading-relaxed cursor-pointer">
-              I consent to the processing of the personal data as set out in the{' '}
-              <a href="#" className="text-white underline">Privacy Policy</a> and{' '}
-              <a href="#" className="text-white underline">Cookie Policy</a>, and I agree that, 
-              given the global nature of EffectiveSoft business, such processing may take place 
-              outside of my jurisdiction
+            <label
+              htmlFor="consent"
+              className="text-gray-400 text-sm leading-relaxed cursor-pointer"
+            >
+              I consent to the processing of the personal data as set out in the{" "}
+              <a href="#" className="text-white underline">
+                Privacy Policy
+              </a>{" "}
+              and{" "}
+              <a href="#" className="text-white underline">
+                Cookie Policy
+              </a>
+              , and I agree that, given the global nature of B2CINC business,
+              such processing may take place outside of my jurisdiction
             </label>
           </div>
 
@@ -211,4 +234,4 @@ const handleInputChange = (
       </div>
     </div>
   );
-}
+};

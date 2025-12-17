@@ -69,7 +69,7 @@ export const DesignPageFooter: React.FC = () => {
         <div className='w-10/12 mx-auto text-gray-400 flex justify-between py-7'>
 
           <p className="text-lg ">
-            &copy; {new Date().getFullYear()} Effectivesoft. All rights
+            &copy; {new Date().getFullYear()} B2CINC. All rights
             reserved.
           </p>
           <div className='flex gap-2'>

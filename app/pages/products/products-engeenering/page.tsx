@@ -144,7 +144,7 @@ const steps = [
   {
     title: "Solution architecture",
     description:
-      "EffectiveSoft’s solution architects create a custom architectural blueprint, select suitable development tools and technologies, and identify potential challenges that might arise later in the project.",
+      "B2CINC's solution architects create a custom architectural blueprint, select suitable development tools and technologies, and identify potential challenges that might arise later in the project.",
   },
   {
     title: "UI/UX Design",
@@ -387,7 +387,7 @@ const steps = [
          <div className="flex flex-col w-1/2 h-3/4 gap-3 text-white">
                      <h2 className="text-2xl font-medium">Clutch Proven</h2>
                      <p className="text-lg pt-6">
-                       Team up with EffectiveSoft to explore the limitless potential of
+                       Team up with B2CINC to explore the limitless potential of
                        artificial intelligence (AI)! From AI strategy building and data
                        analysis to AI integration and deployment, our comprehensive
                        artificial intelligence development services are tailored to
@@ -416,9 +416,9 @@ const steps = [
   {/* RIGHT — TEXT */}
   <div className="w-1/2">
     <p className="text-lg leading-relaxed font-sans">
-      “EffectiveSoft's product engineers have extensive skill sets in project 
+      B2CINC's product engineers have extensive skill sets in project 
       management, interpersonal communication, creative thinking, design, and 
-      technical expertise...”
+      technical expertise...
     </p>
 
     <div className="mt-5">

@@ -332,7 +332,7 @@ export default function AIDevelopementServices() {
           <div className="flex flex-col w-full md:w-1/2 gap-4 sm:gap-5 text-white">
             <h2 className="text-xl sm:text-2xl font-medium">Clutch Proven</h2>
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-              Team up with EffectiveSoft to explore the limitless potential of
+              Team up with B2CINC to explore the limitless potential of
               artificial intelligence (AI)! From AI strategy building and data
               analysis to AI integration and deployment, our comprehensive
               artificial intelligence development services are tailored to
@@ -368,9 +368,9 @@ export default function AIDevelopementServices() {
         {/* RIGHT — TEXT */}
         <div className="w-full lg:w-7/12">
           <p className="text-base sm:text-lg leading-relaxed font-sans mb-4 sm:mb-5">
-            "EffectiveSoft's product engineers have extensive skill sets in project
+            "B2CINC's product engineers have extensive skill sets in project
             management, interpersonal communication, creative thinking, design, and
-            technical expertise..."
+            technical expertise...
           </p>
 
           <div>
@@ -468,7 +468,7 @@ export default function AIDevelopementServices() {
         <section className="pt-8 sm:pt-10 lg:pt-12">
           <div className="flex flex-col gap-3 sm:gap-4 py-6 sm:py-8 lg:py-10">
             <h5 className="text-base sm:text-lg font-medium uppercase tracking-wider text-gray-600">Why us</h5>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium">Why choose EffectiveSoft</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium">Why choose B2CINC</h2>
           </div>
 
           <FadeSlideIn className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
